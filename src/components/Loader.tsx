@@ -1,6 +1,6 @@
 const Loader = () => {
 	return (
-		<div role="status">
+		<div className="flex flex-col items-center space-y-4">
 			<svg
 				aria-hidden="true"
 				className="w-12 h-12 mr-2 animate-spin text-gray-400 fill-black"
@@ -17,7 +17,7 @@ const Loader = () => {
 					fill="currentFill"
 				/>
 			</svg>
-			<span className="sr-only">Loading...</span>
+			<span className="text-xl text-center font-medium">Loading</span>
 		</div>
 	);
 };
