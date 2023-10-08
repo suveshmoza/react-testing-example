@@ -1,13 +1,6 @@
 import { useState, useEffect } from 'react';
 import Loader from './Loader';
-
-type UserData = {
-	name: string;
-	email: string;
-	phone: string;
-	username: string;
-	website: string;
-};
+import { UserData } from '../types/UserData.types';
 
 function UserProfile() {
 	const [userData, setUserData] = useState<UserData | null>(null);
