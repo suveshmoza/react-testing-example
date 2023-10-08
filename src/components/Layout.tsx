@@ -3,7 +3,9 @@ type Props = {
 };
 
 const Layout = ({ children }: Props) => {
-	return <div>{children}</div>;
+	return (
+		<div className="h-screen flex justify-center items-center">{children}</div>
+	);
 };
 
 export default Layout;
