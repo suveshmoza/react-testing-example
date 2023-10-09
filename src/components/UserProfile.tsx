@@ -6,10 +6,7 @@ function UserProfile() {
 	const [userData, setUserData] = useState<UserData | null>(null);
 
 	useEffect(() => {
-		fetch(
-			'https://jsonplaceholder.typicode.com/users/' +
-				Math.floor(Math.random() * 10)
-		)
+		fetch('https://jsonplaceholder.typicode.com/users/1')
 			.then((response) => response.json())
 			.then((data: UserData) => setUserData(data))
 			.catch((error) => console.error('Error fetching user data:', error));
